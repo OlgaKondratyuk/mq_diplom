@@ -185,19 +185,21 @@ body{
 .trend_holder{
     display:flex;
     flex-direction: row;
-    position: relative;
-    width:100%;
+    justify-content:center;
 }
 .trend_set {
     display:flex;
     position:relative;
     justify-content: center;
     margin-left:5px;
+    width:100%;
 }
 .trend-preview{
     margin-left: 5px;
     margin-bottom: 5px;
     justify-items: flex-end;
+    width: 414px;
+    height: 319px;
 }
 .trend-preview-lifestyle{
     background-image: url("../Images/trend1.jpg");

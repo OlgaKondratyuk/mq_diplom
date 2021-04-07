@@ -818,6 +818,7 @@ footer {
     justify-content: center;
     top:0;
     left:0;
+    display: none;
 }
 .popup_hidden::before {
     content: "";

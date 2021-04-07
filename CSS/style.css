@@ -183,7 +183,7 @@ body{
     }
 .trend_holder{
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     justify-content:center;
     width:100%;
 }
@@ -212,7 +212,7 @@ body{
     display:flex;
     justify-content:space-around;
     background-size: cover;
-    }
+}
 .trend-preview-life{
     background-image: url("../Images/trend2.jpg");
     background-repeat: no-repeat;
@@ -818,7 +818,7 @@ footer {
     justify-content: center;
     top:0;
     left:0;
-
+    display: none;
 }
 .popup_hidden::before {
     content: "";
@@ -953,11 +953,12 @@ footer {
     width: 1em;
     height: 1em;
     font-size: 18px;
+    color:transparent;
     position: absolute;
     background-image: url(../SVG/form-x.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: transparent;
+    background-color:transparent;
     border: none;
     top:-1.5em;
     right:0;
@@ -1520,6 +1521,7 @@ footer {
         top:0;
         left:0;
         width: 100%;
+        display: none;
 
     }
     .popup_hidden::before {
@@ -1667,19 +1669,8 @@ footer {
         z-index: 999;
     }
 }
-@media(orientation:landscape) and (max-width: 640px){
-    .trend_group {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 40px;
-        width:100%;
-    }
-    .trend-label {
-        font-size: 18px;
-        line-height: 29px;
-    }
-    .trend_holder {
+@media (max-width: 640px) and (orientation:landscape){
+    .trend_holder{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;

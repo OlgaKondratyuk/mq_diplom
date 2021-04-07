@@ -36,7 +36,6 @@ img {
     display: flex;
     position: relative;
     width:100%;
-    padding: 0 15px;
 }
 .menu__button:after, .trend-label:after, .posts-header:after, .form-hint:after, .tags-header:after, .categories-header:after, .handcraft-label:after{
     content: "";
@@ -68,14 +67,14 @@ body{
     width: 100%;
 }
 .header-logo {
-    height: 41px;
-    margin-top: 29px;
-    margin-left: 100px;
+    height: 40%;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 .title-name {
     display: flex;
     position: relative;
-    width: 755px;
+    width: 35%;
     font-size: 45px;
     line-height: 55px;
     color: #ffffff;
@@ -93,8 +92,8 @@ body{
 .menu-list {
     display: flex;
     list-style-type: none;
-    margin-top: 36px;
-    margin-left: 250px;
+    margin-top: 5%;
+    margin-left: 90%;
 }
 .menu-link {
     margin-right: 50px;
@@ -147,20 +146,20 @@ body{
 .title-name-container{
     display:flex;
     justify-content: space-around;
-    margin-top:70px;
+    margin-top:3%;
     }
 .main-body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 .trend_group {
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 40px;
-    width: 100%;
+    width:100%;
 }
 .trend_title {
     display: flex;
@@ -186,33 +185,33 @@ body{
     display:flex;
     flex-direction: row;
     justify-content:center;
+    width:100%;
 }
 .trend_set {
     display:flex;
     position:relative;
     justify-content: center;
     margin-left:5px;
-    width:100%;
+    width:25%;
 }
 .trend-preview{
     margin-left: 5px;
     margin-bottom: 5px;
     justify-items: flex-end;
-    width: 414px;
-    height: 319px;
-}
+    }
 .trend-preview-lifestyle{
     background-image: url("../Images/trend1.jpg");
     background-repeat: no-repeat;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: center center;
-    background-color: #000000;
+    background-color: #eff6f1;
     position: relative;
-    width: 414px;
+    width: 100%;
     height: 319px;
     display:flex;
     justify-content:space-around;
+    background-size: cover;
     }
 .trend-preview-life{
     background-image: url("../Images/trend2.jpg");
@@ -222,10 +221,11 @@ body{
     background-position: center center;
     background-color: #eff6f1;
     position: relative;
-    width: 414px;
+    width: 100%;
     height: 319px;
     display:flex;
     justify-content:space-around;
+    background-size: cover;
 }
 .trend-preview-travel{
     background-image: url("../Images/trend3.jpg");
@@ -235,10 +235,11 @@ body{
     background-position: center center;
     background-color: #eff6f1;
     position: relative;
-    width: 414px;
+    width: 100%;
     height: 319px;
     display:flex;
     justify-content:space-around;
+    background-size: cover;
 }
 .trend-preview-health{
     background-image: url("../Images/trend4.jpg");
@@ -248,10 +249,11 @@ body{
     background-position: center center;
     background-color: #eff6f1;
     position: relative;
-    width: 414px;
+    width: 100%;
     height: 319px;
     display:flex;
     justify-content:space-around;
+    background-size: cover;
 }
 .trend-preview-lifestyle::before, .trend-preview-life::before,  .trend-preview-travel::before, .trend-preview-health::before{
     content: "";
@@ -263,9 +265,11 @@ body{
     bottom: 0;
     width: 100%;
     opacity: 0.6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .trend-description {
-    max-width: 371px;
+    max-width: 90%;
     max-height: 146px;
     border: 3px solid #b59f5b;
     position: absolute;
@@ -814,8 +818,7 @@ footer {
     justify-content: center;
     top:0;
     left:0;
-    display: none;
-    }
+}
 .popup_hidden::before {
     content: "";
     background-color: #000000;
@@ -825,7 +828,6 @@ footer {
     right: 0;
     bottom: 0;
     opacity: 0.6;
-    width: 100%;
 }
 .popup__container{
     width:390px;
@@ -974,9 +976,11 @@ footer {
         margin-top: 43px;
         margin-left:35px;
     }
-    .menu__button{
-        margin-left: 300px;
-        margin-top: 10%;
+    .js-menu{
+        height: 20%;
+        margin-right: 5%;
+        margin-left: 50%;
+        margin-top: 2%;
     }
     .menu-list {
         display: none;
@@ -986,9 +990,8 @@ footer {
         font-size: 40px;
         line-height: 55px;
     }
-    .trend_group {
-        flex-wrap: wrap;
-        max-width:800px;
+    .title-name-container{
+        margin-top:10%;
     }
     .trend-label {
         font-size: 18px;
@@ -998,12 +1001,19 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 100%;
+        justify-content:center;
     }
     .trend_set {
-        max-height: 306px;
         width: 50%;
         max-width: 370px;
         margin-bottom:3%;
+        position: relative;
+    }
+    .trend-preview{
+        margin-left: 5px;
+        margin-bottom: 5px;
+        justify-items: flex-end;
     }
     .trend-description {
         max-width: 345px;
@@ -1011,6 +1021,7 @@ footer {
         margin-bottom: 20px;
         padding-left: 15px;
         justify-content: center;
+        position: absolute;
     }
     .trend-type {
         font-size: 14px;
@@ -1183,7 +1194,10 @@ footer {
         height: 48px;
         background-color: #323232;
     }
+    .popup_hidden{
+    width: 100%;
     }
+}
 @media(max-width: 640px){
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
@@ -1196,38 +1210,32 @@ footer {
         max-height: 1036px;
         width:100%;
     }
-    .welcome::before {
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.6;
-        width:100%;
-    }
     .header-logo {
-        width:269px;
-        height:61px;
+        height:40%;
         margin-left:5%;
-        margin-right:10%;
-        margin-top:40%;
+        margin-right:5%;
+        margin-top:35%;
+        display: flex;
+
+        }
+    .title-name-container{
+        display:flex;
+        position: relative;
     }
     .title-name {
         display: flex;
-        position: relative;
-        font-size: 26px;
-        line-height: 36px;
-    }
-    .title-name-container{
-        margin:0 auto;
+        font-size: 20px;
+        line-height:30px;
     }
     .header {
         display: flex;
     }
     .menu-list {
         display: none;
+    }
+    .js-menu{
+        height: 20%;
+        margin-right: 5%;
     }
     .js-menu_active .menu__list {
         width: 100%;
@@ -1285,10 +1293,11 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 100%;
     }
     .trend_set {
        margin-bottom: 1%;
-
+        width: 100%;
     }
     .trend-preview{
         margin-left: 5px;
@@ -1303,6 +1312,8 @@ footer {
         max-width: 330px;
         max-height: 128px;
         margin-bottom: 10px;
+        margin-right: 2%;
+        margin-left: 2%;
         padding-left: 10px;
         padding-right: 2%;
         justify-content: center;
@@ -1323,28 +1334,31 @@ footer {
         width: 100%;
         }
     .recent-news {
-        margin-bottom: 5%;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         width:100%;
+        max-width: 300px;
+        justify-content: center;
+        margin: 0 auto;
     }
     .news-preview {
         display:flex;
-        margin: 0 auto;
-
+        width:100%;
     }
     .news-info {
         display:flex;
         flex-direction:column;
-        width: 327px;
-        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 10%;
     }
     .news-category {
         font-size: 14px;
     }
     .news-name {
-        font-size: 16px;
+        font-size: 80%;
         line-height: 20px;
+        width:100%;
     }
     .news-age {
        font-size: 12px;
@@ -1356,12 +1370,13 @@ footer {
         margin-left: 20px;
     }
     .news-description {
-        font-size: 14px;
+        font-size: 80%;
         line-height: 20px;
+        width: 100%;
+        margin-bottom: 10%;
     }
     .side-info{
-        margin-top: 15%;
-        margin-left: 2%;
+        margin: 0 auto;
     }
     .posts-header {
         font-size: 16px;
@@ -1371,12 +1386,11 @@ footer {
     .recent-post {
         margin-bottom: 5%;
     }
-
     .handcraft_group{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 50px;
+        margin: 0 auto;
     }
     .handcraft_title{
         display: flex;
@@ -1403,16 +1417,22 @@ footer {
         background-image: url("../Images/shop-item-mobile1.jpg");
         width: 298px;
         height: 258px;
+        background-position: center center;
+        background-size: cover;
     }
     .handcraft_picture_toy{
         background-image: url("../Images/shop-item-mobile2.jpg");
         width: 298px;
         height: 258px;
+        background-position: center center;
+        background-size: cover;
     }
     .handcraft_picture_mirror{
         background-image: url("../Images/shop-item-mobile3.jpg");
         width: 298px;
         height: 258px;
+        background-position: center center;
+        background-size: cover;
     }
     .handcraft-description{
         max-width: 332px;
@@ -1423,16 +1443,14 @@ footer {
         align-self: flex-end;
         padding-left: 15px;
         justify-content:space-between;
-
     }
     .handcraft-type{
         font-size: 17px;
         line-height: 22px;
         color: #0f0d0e;
-        font-weight: 700;
         font-family: "OpenSans-Regular", sans-serif;
         text-transform: uppercase;
-        margin-top: 60px;
+        margin-top: 25%;
     }
     .handcraft-name {
         width: 259px;
@@ -1440,16 +1458,13 @@ footer {
         font-size: 15px;
         line-height: 22px;
         color: #0f0d0e;
-        font-weight: 400;
         font-family: "OpenSans-Regular", sans-serif;
     }
     .hover{
         width: 301px;
-        height: 54px;
         font-size: 15px;
         line-height: 22px;
         color: #b59f5b;
-        font-weight: 400;
         font-family: "OpenSans-Regular", sans-serif;
         text-decoration: none ;
     }
@@ -1467,7 +1482,6 @@ footer {
         line-height: 24px;
         text-decoration: line-through;
         color: #0f0d0e;
-        font-weight: 700;
         font-family: "OpenSans-Regular", sans-serif;
     }
     .product-new-price{
@@ -1484,7 +1498,6 @@ footer {
         font-size: 14px;
         line-height: 40px;
         color: #ffffff;
-        font-weight: 700;
         font-family: "OpenSans-Regular", sans-serif;
     }
     .handcraft-button:hover,
@@ -1492,5 +1505,56 @@ footer {
         width: 140px;
         height: 48px;
         background-color: #323232;
+    }
+    .popup_hidden{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+@media(orientation:landscape) and (max-width: 640px){
+    .trend_group {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 40px;
+        width:100%;
+    }
+    .trend-label {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .trend_holder {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content:center;
+    }
+    .trend_set {
+        width: 50%;
+        max-width: 370px;
+        margin-bottom:3%;
+        position: relative;
+    }
+    .trend-preview{
+        margin-left: 5px;
+        margin-bottom: 5px;
+        justify-items: flex-end;
+    }
+    .trend-description {
+        max-width: 345px;
+        max-height: 137px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+        justify-content: center;
+        position: absolute;
+    }
+    .trend-type {
+        font-size: 14px;
+        line-height: 37px;
+    }
+    .trend-name {
+        font-size: 17px;
+        line-height: 22px;
     }
 }

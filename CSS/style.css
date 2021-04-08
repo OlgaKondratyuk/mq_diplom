@@ -1670,38 +1670,12 @@ footer {
     }
 }
 @media (max-width: 640px) and (orientation:landscape){
+
     .trend_holder{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        justify-content:center;
-    }
+        }
     .trend_set {
-        width: 50%;
-        max-width: 370px;
-        margin-bottom:3%;
-        position: relative;
-    }
-    .trend-preview{
-        margin-left: 5px;
-        margin-bottom: 5px;
-        justify-items: flex-end;
-    }
-    .trend-description {
-        max-width: 345px;
-        max-height: 137px;
-        margin-bottom: 20px;
-        padding-left: 15px;
-        justify-content: center;
-        position: absolute;
-    }
-    .trend-type {
-        font-size: 14px;
-        line-height: 37px;
-    }
-    .trend-name {
-        font-size: 17px;
-        line-height: 22px;
+        width: calc(49% - 3px);
     }
 }

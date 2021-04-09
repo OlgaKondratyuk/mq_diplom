@@ -67,9 +67,23 @@ body{
     width: 100%;
 }
 .header-logo {
-    height: 40%;
-    margin-top: 10%;
+    background-image: url("../SVG/noemi-logo.svg");
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: center center;
+    background-color: transparent;
+    width: 100%;
+    background-size: cover;
+    max-width:179px;
+    max-height: 41px;
+    margin-top: 1%;
     margin-left: 10%;
+}
+.title-name-container{
+    display:flex;
+    justify-content: space-around;
+    margin-top:3%;
 }
 .title-name {
     display: flex;
@@ -93,7 +107,7 @@ body{
     display: flex;
     list-style-type: none;
     margin-top: 5%;
-    margin-left: 90%;
+    margin-left: 70%;
 }
 .menu-link {
     margin-right: 50px;
@@ -143,11 +157,6 @@ body{
     left: 0;
     top: 50%;
 }
-.title-name-container{
-    display:flex;
-    justify-content: space-around;
-    margin-top:3%;
-    }
 .main-body {
     display: flex;
     flex-direction: column;
@@ -681,7 +690,7 @@ sup {
     font-weight: 700;
     font-family: "OpenSans-Regular", sans-serif;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top:10%;
 }
 .handcraft-name {
     width: 301px;
@@ -706,7 +715,7 @@ sup {
     display:flex;
     justify-content: space-around;
     align-content: flex-end;
-    margin-top: 70px;
+    margin-top: 15%;
 }
 .handcraft-prices{
     display:flex;
@@ -975,14 +984,14 @@ footer {
     }
     .header-logo {
         height: 36px;
-        margin-top: 43px;
-        margin-left:35px;
+        margin-top: 5%;
+        margin-left:5%;
     }
     .js-menu{
         height: 20%;
         margin-right: 5%;
-        margin-left: 50%;
-        margin-top: 2%;
+        margin-left: 60%;
+        margin-top: 5%;
     }
     .menu-list {
         display: none;
@@ -1000,33 +1009,18 @@ footer {
         line-height: 29px;
     }
     .trend_holder {
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-        justify-content:center;
     }
     .trend_set {
         width: 50%;
         max-width: 370px;
         margin-bottom:3%;
-        position: relative;
-    }
-    .trend-preview{
-        margin-left: 5px;
-        margin-bottom: 5px;
-        justify-items: flex-end;
     }
     .trend-description {
         max-width: 345px;
         max-height: 137px;
-        margin-bottom: 20px;
-        padding-left: 15px;
-        justify-content: center;
-        position: absolute;
     }
     .trend-type {
-        font-size: 14px;
         line-height: 37px;
     }
     .trend-name {
@@ -1034,71 +1028,28 @@ footer {
         line-height: 22px;
     }
     .recent-news {
-        display: flex;
         flex-wrap: wrap;
         width: 100%;
         flex-direction: column;
-    }
-    .news-category {
-        font-size: 14px;
-        line-height: 40px;
     }
     .news-name {
         font-size: 17px;
         line-height: 22px;
     }
-    .news-age {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 40px;
-    }
-    .news-author {
-        font-size: 12px;
-        margin-left: 20px;
-        line-height: 40px;
-    }
     .news-description {
         width: 392px;
         height: 76px;
-        font-size: 15px;
-        line-height: 22px;
-        font-weight: 400;
     }
     .handcraft_group{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin-top: 5%;
-    }
-    .handcraft_title{
-        display: flex;
-        justify-content: center;
     }
     .handcraft-label{
         font-size: 18px;
-        line-height: 29px;
-        color: #0f0d0e;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-        text-transform: uppercase;
-    }
-    .handcraft-label:after {
-        content: "";
-        width: 66px;
-        height: 3px;
-        background-color: #b59f5b;
-        display: flex;
     }
     .handcraft_holder{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
     }
     .handcraft-set{
-        display: flex;
-        position:relative;
-        justify-content:space-around;
         width: 50%;
         margin-top: 2%;
     }
@@ -1120,81 +1071,15 @@ footer {
     .handcraft-description{
         width: 338px;
         height: 264px;
-        background-color: rgba(0,0,0,0);
-        border: 3px solid #b59f5b;
-        position: absolute;
-        align-self: flex-end;
-        padding-left: 15px;
-        justify-content:space-between;
     }
     .handcraft-type{
         font-size: 17px;
         line-height: 22px;
-        color: #0f0d0e;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-        text-transform: uppercase;
-        margin-top: 50px;
+        margin-top: 15%;
     }
     .handcraft-name {
         width: 291px;
         height: 50px;
-        font-size: 15px;
-        line-height: 22px;
-        color: #0f0d0e;
-        font-weight: 400;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .hover{
-        width: 301px;
-        height: 54px;
-        font-size: 15px;
-        line-height: 22px;
-        color: #b59f5b;
-        font-weight: 400;
-        font-family: "OpenSans-Regular", sans-serif;
-        text-decoration: none ;
-    }
-    .handcraft-footer{
-        display:flex;
-        justify-content: space-around;
-        align-content: flex-end;
-        margin-top: 15%;
-    }
-    .handcraft-prices{
-        display:flex;
-        flex-direction: column;
-    }
-    .product-old-price{
-        font-size: 14px;
-        line-height: 24px;
-        text-decoration: line-through;
-        color: #0f0d0e;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .product-new-price{
-        font-size: 20px;
-        line-height: 24px;
-        color: #0f0d0e;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .handcraft-button{
-        width: 140px;
-        height: 48px;
-        background-color: #b59f5b;
-        font-size: 14px;
-        line-height: 40px;
-        color: #ffffff;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .handcraft-button:hover,
-    .handcraft-button:hover::before{
-        width: 140px;
-        height: 48px;
-        background-color: #323232;
     }
     .popup_hidden{
     width: 100%;
@@ -1203,34 +1088,32 @@ footer {
 @media(max-width: 640px){
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        background-color: #000000;
-        position: relative;
-        max-width: 773px;
-        max-height: 1036px;
         width:100%;
     }
-    .header-logo {
-        height:40%;
-        margin-left:5%;
-        margin-right:5%;
-        margin-top:35%;
+    .container{
         display: flex;
-
-        }
-    .title-name-container{
-        display:flex;
+        flex-direction: column;
         position: relative;
     }
-    .title-name {
+    .header-logo {
+        width: 269px;
+        height: 61px;
+        justify-content: center;
         display: flex;
+        margin-left: 23%;
+        margin-top: 40%;
+        position: absolute;
+        }
+    .title-name-container{
+        position: relative;
+        justify-content: center;
+    }
+    .title-name {
         font-size: 20px;
         line-height:30px;
-    }
-    .header {
-        display: flex;
+        width: 269px;
+        height: 61px;
+        margin-top: 150px;
     }
     .menu-list {
         display: none;
@@ -1280,31 +1163,22 @@ footer {
         color: #00aeff
     }
     .menu__button{
-        margin-top: 30%;
-        margin-left: 10%;
+     margin-left: 90%;
+     margin-top: 20px;
     }
     .trend_group {
        margin-bottom: 5%;
-
     }
     .trend-label {
         font-size: 16px;
         line-height: 29px;
     }
     .trend_holder {
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
     }
     .trend_set {
        margin-bottom: 1%;
         width: 100%;
-    }
-    .trend-preview{
-        margin-left: 5px;
-        margin-bottom: 5px;
-        justify-items: flex-end;
     }
     .trend-preview-lifestyle, .trend-preview-life, .trend-preview-travel, .trend-preview-health{
         max-width: 362px;
@@ -1316,12 +1190,9 @@ footer {
         margin-bottom: 10px;
         margin-right: 2%;
         margin-left: 2%;
-        padding-left: 10px;
         padding-right: 2%;
-        justify-content: center;
     }
     .trend-type {
-        font-size: 14px;
         line-height: 37px;
     }
     .trend-name {
@@ -1332,11 +1203,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 0 auto;
         width: 100%;
         }
     .recent-news {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width:100%;
@@ -1349,27 +1218,13 @@ footer {
         width:100%;
     }
     .news-info {
-        display:flex;
-        flex-direction:column;
         width: 100%;
         margin-bottom: 10%;
-    }
-    .news-category {
-        font-size: 14px;
     }
     .news-name {
         font-size: 80%;
         line-height: 20px;
         width:100%;
-    }
-    .news-age {
-       font-size: 12px;
-        line-height: 40px;
-    }
-    .news-author {
-        font-size: 12px;
-        line-height: 40px;
-        margin-left: 20px;
     }
     .news-description {
         font-size: 80%;
@@ -1382,300 +1237,124 @@ footer {
     }
     .posts-header {
         font-size: 16px;
-        line-height: 29px;
         margin-bottom:2%;
     }
     .recent-post {
         margin-bottom: 5%;
     }
     .handcraft_group{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 0 auto;
-    }
-    .handcraft_title{
-        display: flex;
-        justify-content: center;
     }
     .handcraft-label{
         font-size: 16px;
-        line-height: 29px;
     }
     .handcraft_holder{
-        display: flex;
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-around;
     }
     .handcraft-set{
-        display: flex;
         max-width: 477px;
-        position:relative;
-        justify-content:space-around;
         margin-bottom: 5%;
     }
     .handcraft_picture_pillow{
         background-image: url("../Images/shop-item-mobile1.jpg");
         width: 298px;
-        height: 258px;
-        background-position: center center;
+        height: 230px;
         background-size: cover;
     }
     .handcraft_picture_toy{
         background-image: url("../Images/shop-item-mobile2.jpg");
         width: 298px;
-        height: 258px;
-        background-position: center center;
+        height: 230px;
         background-size: cover;
     }
     .handcraft_picture_mirror{
         background-image: url("../Images/shop-item-mobile3.jpg");
         width: 298px;
-        height: 258px;
-        background-position: center center;
+        height: 230px;
         background-size: cover;
     }
     .handcraft-description{
         max-width: 332px;
         width:100%;
-        background-color: rgba(0,0,0,0);
-        outline-color:#b59f5b;
-        position: absolute;
-        align-self: flex-end;
-        padding-left: 15px;
-        justify-content:space-between;
     }
     .handcraft-type{
         font-size: 17px;
         line-height: 22px;
-        color: #0f0d0e;
-        font-family: "OpenSans-Regular", sans-serif;
-        text-transform: uppercase;
-        margin-top: 25%;
+        margin-top: 20%;
     }
     .handcraft-name {
         width: 259px;
         height: 38px;
-        font-size: 15px;
-        line-height: 22px;
-        color: #0f0d0e;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .hover{
-        width: 301px;
-        font-size: 15px;
-        line-height: 22px;
-        color: #b59f5b;
-        font-family: "OpenSans-Regular", sans-serif;
-        text-decoration: none ;
-    }
-    .handcraft-footer{
-        display:flex;
-        justify-content: space-around;
-        align-content: flex-end;
-    }
-    .handcraft-prices{
-        display:flex;
-        flex-direction: column;
-    }
-    .product-old-price{
-        font-size: 14px;
-        line-height: 24px;
-        text-decoration: line-through;
-        color: #0f0d0e;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .product-new-price{
-        font-size: 20px;
-        line-height: 24px;
-        color: #0f0d0e;
-        font-weight: 700;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .handcraft-button{
-        width: 140px;
-        height: 48px;
-        background-color: #b59f5b;
-        font-size: 14px;
-        line-height: 40px;
-        color: #ffffff;
-        font-family: "OpenSans-Regular", sans-serif;
-    }
-    .handcraft-button:hover,
-    .handcraft-button:hover::before{
-        width: 140px;
-        height: 48px;
-        background-color: #323232;
     }
     .popup_hidden{
        width: 100%;
-    }
-    .popup_hidden{
-        position:fixed;
-        max-width: 100vw;
-        max-height: 100vh;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        top:0;
-        left:0;
-        width: 100%;
-        display: none;
-
-    }
-    .popup_hidden::before {
-        content: "";
-        background-color: #000000;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.6;
     }
     .popup__container{
        width:100%;
         margin-left:5%;
         margin-right:5%;
-        box-sizing:border-box;
-        padding:30px;
-        -moz-appearance: none;
-        position:relative;
-        background-color: #ffffff;
-        z-index: 999;
-        font-family:"OpenSans-Regular", sans-serif;
     }
     .feedback{
         width: 100%;
     }
     .feedback__title{
         font-size:100%;
-        line-height: 1.45;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "OpenSans-Bold", Arial, sans-serif; ;
-    }
-    .feedback__title::after{
-        content: "";
-        display: flex;
-        width: 66px;
-        height: 3px;
-        margin-top: 5px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #e1d9bd;
     }
     .feedback-set{
-        display:block;
         margin-top:5px;
     }
     .feedback-label{
-        display: block;
         width: 100%;
         margin-top: 15px;
-        margin-bottom:5px;
-        font-size: 13px;
     }
     .popup_select{
         width: 100%;
-        display: inline-block;
-        box-sizing: border-box;
-        -moz-appearance: none;
-        -webkit-appearance: none;
         padding-left: 10px;
         padding-right: 10px;
-        background-image: url(../SVG/form-arrows.svg);
-        background-repeat: no-repeat;
-        background-position: right 14px center;
-        background-size: 10px;
-        border: none;
-        background-color: #f4f7f6;
-        font-size: 13px;
-        color: #0f0d0e;
     }
     .form-hint{
-        display:block;
         width:100%;
         margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 13px;
-    }
-    .popup-radio{
-        position: absolute;
-        clip:rect(1px, 1px, 1px, 1px);
-        height: 1px;
-        width: 1px;
-    }
-    .radio-group-text{
-        margin-right:10px;
     }
     .radio-group-text::before{
-        content: "";
-        display: inline-block;
-        vertical-align: middle;
         width: 15px;
         height: 15px;
-        background-image: url(../SVG/form-empty-circle.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
         background-size: 15px;
         margin-right: 5px;
     }
     .form-title{
-        display: block;
         width:100%;
         margin-top: 25px;
-        margin-bottom: 5px;
-        font-size: 13px;
     }
     .field_textarea{
-        box-sizing: border-box;
         width: 100%;
         height: 100%;
-        border: none;
-        background-color: #f4f7f6;
-        padding: 20px 20px;
-        font-family: "OpenSans-Regular", Arial, sans-serif;
-        font-size: 13px;
-        resize: none;
     }
     .popup-button{
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 2.8;
-        font-family: "OpenSans-Bold", Arial, sans-serif;
-        margin-top: 18px;
-        margin-bottom: 18px;
         width: 100%;
         height: 25%;
-        border:none;
-        color:white;
-        background-color: #b59f5b;
-        cursor:pointer;
-    }
-    .popup__close{
-        width: 1em;
-        height: 1em;
-        font-size: 18px;
-        position: absolute;
-        background-image: url(../SVG/form-x.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: transparent;
-        border: none;
-        top:-1.5em;
-        right:0;
-        z-index: 999;
     }
 }
-@media (max-width: 640px) and (orientation:landscape){
-
+@media (max-width: 641px) and (orientation:landscape){
     .trend_holder{
         display: flex;
         flex-wrap: wrap;
         }
     .trend_set {
         width: calc(49% - 3px);
+    }
+    .header-logo {
+        height: 36px;
+        margin-top: 43px;
+        margin-left:35px;
+    }
+    .title-name {
+        display: flex;
+        font-size: 20px;
+        line-height:30px;
+        width: 269px;
+        height: 61px;
+        margin-top: 70px;
     }
 }

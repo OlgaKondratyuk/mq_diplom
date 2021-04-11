@@ -8,11 +8,10 @@
     <title> MQ Diploma_OlgaK_15.03.2021</title>
           <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<div>
 <header class="welcome">
     <div class="container">
-        <div class = "emblem">
-        <img src="SVG/noemi-logo.svg" alt="picture with mountain sights" class="header-logo">
+        <div class = "header-logo">
         </div>
         <nav class="menu js-menu">
             <button class="menu__button js-menu__button">
@@ -44,11 +43,10 @@
         <h1 class=" title-name">Блог о творчестве, спорте и образе жизни</h1>
     </div>
 </header>
-
 <main class="main-body">
     <div class = "trend_group">
         <div class = "trend_title">
-        <h2 class = "trend-label"> Сейчас в тренде </h2>
+            <h2 class = "trend-label"> Сейчас в тренде </h2>
         </div>
         <div class = "trend_holder">
             <div class = "trend_set">
@@ -240,14 +238,14 @@
     </div>
         <div class="search-row">
             <label>
-                <input type="text" class="search-field" placeholder="Найти...">
+                <input type="text" class="search-field" placeholder="Найти..." alt="search-field">
             </label>
             <button class="search"> </button>
         </div>
         <div class="subscription-form">
-            <span class="form-hint">Рассылка</span>
+            <span class="form-sign">Рассылка</span>
             <label>
-                <input type="email" class="field-email" placeholder="  Ваш email адрес" required>
+                <input type="email" class="field-email" placeholder="  Ваш email адрес" required  alt="enter email">
             </label>
             <button type="submit" class="field-subscription"> Подписаться </button>
         </div>
@@ -263,13 +261,13 @@
                             <a class="tag-link" href="">music</a>
                         </li>
                         <li class="menu-tag-item">
-                            <a class="tag-link" href="">Lorem tag</a>
+                            <a class="tag-link" href="">Lifestyle</a>
                         </li>
                         <li class="menu-tag-item">
-                            <a class="tag-link" href="">tag</a>
+                            <a class="tag-link" href="">Art</a>
                         </li>
                         <li class="menu-tag-item">
-                            <a class="tag-link" href="">ipsum tag</a>
+                            <a class="tag-link" href="">Interior</a>
                         </li>
                         <li class="menu-tag-item">
                             <a class="tag-link" href="">travel</a>
@@ -278,7 +276,7 @@
                             <a class="tag-link" href="">fashion</a>
                         </li>
                         <li class="menu-tag-item">
-                            <a class="tag-link" href="">music</a>
+                            <a class="tag-link" href="">health</a>
                         </li>
                     </ul>
                 </nav>
@@ -289,27 +287,26 @@
             <nav class="categories-list">
                 <ul class="categories-types">
                     <li class="category-types-list">
-                        <a class="category-link" href="">Красота<sup>12</sup></a>
+                        <a class="category-link" href="">Красота<span class = "number">12</span></a>
                     </li>
                     <li class="category-types-list">
-                        <a class="category-link" href="">Здоровье<sup>4</sup></a>
+                        <a class="category-link" href="">Здоровье<span class = "number">4</span></a>
                     </li>
                     <li class="category-types-list">
-                        <a class="category-link" href="">Образ жизни<sup>145</sup></a>
+                        <a class="category-link" href="">Образ жизни<span class = "number">145</span></a>
                     </li>
                     <li class="category-types-list">
-                        <a class="category-link" href="">Музыка<sup>28</sup></a>
+                        <a class="category-link" href="">Музыка<span class = "number">28</span></a>
                     </li>
                     <li class="category-types-list">
-                        <a class="category-link" href="">Спорт<sup>62</sup></a>
+                        <a class="category-link" href="">Спорт<span class = "number">62</span></a>
                     </li>
                     <li class="category-types-list">
-                        <a class="category-link" href="">Йога<sup>8</sup></a>
+                        <a class="category-link" href="">Йога<span class="number">8</span></a>
                     </li>
                 </ul>
             </nav>
         </div>
-
     </div>
     </div>
         <div class = "handcraft_group">
@@ -359,7 +356,6 @@
                             </div>
                             <button  class="handcraft-button" type="button"> В магазин </button>
                     </div>
-
                 </div>
                 </div>
             </div>
@@ -396,10 +392,12 @@
         </ul>
     </div>
 </footer>
-</body>
-<span class="copyright"> Copyright &copy; 2009-2016 City Blog LLC</span>
+<span class="copyright">
+<a class = "hover_copyright" href="">Copyright &copy; 2009-2016 City Blog LLC</a>
+    </span>
 <div class="popup_hidden">
     <div class="popup__container">
+        <button class="popup__close" type="button">Закрыть окно</button>
         <form class="feedback">
             <h3 class="feedback__title">Ваш фидбек</h3>
                 <label class="feedback-set">
@@ -413,11 +411,11 @@
                 <div class="form-row">
                     <span class="form-hint">Вы подписаны на e-mail рассылку:</span>
                         <label class="radio-group">
-                            <input type="radio" class="popup-radio" name="mail" value="yes">
+                            <input type="radio" class="popup-radio" name="mail" value="yes" alt="yes">
                             <span class="radio-group-text">Да</span>
                         </label>
                         <label class="radio-group">
-                            <input class="popup-radio" type="radio" name="mail" value="no">
+                            <input class="popup-radio" type="radio" name="mail" value="no" alt="no">
                             <span class="radio-group-text">Нет</span>
                         </label>
                 </div>
@@ -432,8 +430,6 @@
                 </div>
         </form>
     </div>
-        <button class="popup__close" type="button">Закрыть окно</button>
 </div>
-
-
+</div>
 </html>

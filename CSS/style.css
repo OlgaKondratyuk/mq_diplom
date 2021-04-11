@@ -32,10 +32,11 @@ img {
     width: 100%;
 }
 .container {
-    margin: 0 auto;
     display: flex;
     position: relative;
     width:100%;
+    max-width:1660px ;
+    justify-content: center;
 }
 .menu__button:after, .trend-label:after, .posts-header:after, .form-hint:after, .tags-header:after, .categories-header:after, .handcraft-label:after{
     content: "";
@@ -44,6 +45,7 @@ img {
 }
 body{
     min-width: 320px;
+    margin:0;
 }
 .welcome {
     background-image: url(../Images/banner-bg.jpg);
@@ -78,8 +80,7 @@ body{
     max-width:179px;
     max-height: 41px;
     margin-top: 1%;
-    margin-left: 10%;
-}
+   }
 .title-name-container{
     display:flex;
     justify-content: space-around;
@@ -107,7 +108,7 @@ body{
     display: flex;
     list-style-type: none;
     margin-top: 5%;
-    margin-left: 70%;
+    margin-left: 40%;
 }
 .menu-link {
     margin-right: 50px;
@@ -373,7 +374,7 @@ body{
 }
 .side-info{
     display: flex;
-    max-width: 299px;
+    max-width: 329px;
     width: 100%;
     flex-direction: column;
     margin-left: 50px;
@@ -390,16 +391,15 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10%;
 }
 .posts-header:after {
     content: "";
-    margin-bottom: 20px;
     width: 67px;
     height: 4px;
     background-color: #b59f5b;
     display: block;
-    margin-left: 110px;
+    margin: auto;
 }
 .recent-post {
     margin-bottom: 15px;
@@ -433,7 +433,7 @@ body{
 }
 .search-row {
     display: flex;
-    width: 271px;
+    width: 270px;
     height: 49px;
     margin-top: 50px;
 }
@@ -444,7 +444,8 @@ body{
     line-height: 40px;
     color: #000000;
     font-family: "OpenSans-Regular", sans-serif;
-    width: 223px;
+    width: 211px;
+    height: 48px;
     padding-left: 10px;
 }
 .search {
@@ -455,15 +456,16 @@ body{
     background-position: center center;
     background-size: 15px;
     width: 48px;
-    height: 49px;
+    height: 54px;
     background-color: #b59f5b;
 }
 .subscription-form {
     margin-top: 50px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+
 }
-.form-hint {
-    display: block;
+.form-sign {
     font-size: 14px;
     line-height: 29px;
     color: #0f0d0e;
@@ -471,18 +473,18 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
-.form-hint:after {
+.form-sign:after {
     content: "";
-    margin-bottom: 20px;
     width: 67px;
     height: 4px;
     background-color: #b59f5b;
     display: block;
-    margin-left: 110px;
+    margin: auto;
 }
 .field-email {
+    margin-top: 5%;
     margin-bottom: 20px;
     display: block;
     font-size: 13px;
@@ -490,8 +492,8 @@ body{
     color: #000000;
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 400;
-    width: 271px;
-    height: 49px;
+    width: 262px;
+    height: 48px;
     background-color: #f4f7f6;
 }
 .field-subscription {
@@ -503,16 +505,14 @@ body{
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 700;
     background-color: #b59f5b;
-    width: 271px;
-    height: 49px;
+    width: 270px;
+    height: 48px;
     text-align: center;
     text-transform: uppercase;
 }
 .quick-links {
-    width: 271px;
-    display: flex;
-    flex-direction: column;
     text-transform: uppercase;
+    width: 270px;
 }
 .tags-header {
     text-align: center;
@@ -520,25 +520,33 @@ body{
     font-weight: 700;
     font-size: 14px;
     line-height: 29px;
+    margin-bottom: 5%;
 }
 .tags-header:after {
     content: "";
-    margin-bottom: 20px;
     width: 67px;
     height: 4px;
     background-color: #b59f5b;
     display: block;
-    margin-left: 105px;
+    margin:auto;
 }
 .tag-container{
-    justify-content:space-around;
-    display: flex;
+    display: block;
+}
+.menu-tags{
+    flex-wrap: wrap;
+    padding: 0;
 }
 .menu-tag-item {
-    border: 1px solid #eeeeee;
+    border: 3px solid #eeeeee;
     background-color: rgba(244, 243, 241, 0);
     display: inline-block;
     margin-bottom:5px;
+    margin-right: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    justify-items: flex-start;
+    padding: 0 3px;
 }
 .tag-link {
     text-decoration: none;
@@ -556,10 +564,10 @@ body{
     -moz-appearance: none;
 }
 .categories-header {
-    width: 271px;
+    width: 270px;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
     font-size: 14px;
     line-height: 29px;
     color: #0f0d0e;
@@ -569,16 +577,20 @@ body{
 }
 .categories-header:after {
     content: "";
-    margin-bottom: 20px;
     width: 67px;
     height: 4px;
     background-color: #b59f5b;
     display: block;
-    margin-left: 105px;
+    margin: auto;
 }
 .category-types-list {
     border-bottom: 1px solid #eeeeee;
     list-style-type: none;
+}
+.categories-types{
+    padding-left: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 .category-link {
     text-decoration: none;
@@ -588,19 +600,20 @@ body{
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 700;
 }
-sup {
+.number{
     color: #b59f5b;
     font-size: 12px;
     line-height: 36px;
     font-family: "OpenSans-Regular", sans-serif;
     font-weight: 700;
     padding-left: 5px;
+    position: absolute;
 }
 .handcraft_group{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 2%;
+    max-width: 1200px;
+    margin: auto;
 }
 .handcraft_title{
     display: flex;
@@ -625,14 +638,13 @@ sup {
 .handcraft_holder{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+  justify-items: center;
 }
 .handcraft-set{
     display: flex;
-   max-width: 414px;
+    width: 390px;
     height: 450px;
     position:relative;
-   justify-content:space-around;
 }
 .handcraft_picture_pillow{
     background-image: url("../Images/shop-item-desk1.jpg");
@@ -646,7 +658,8 @@ sup {
     width: 300px;
     height: 204px;
     background-color: #eff6f1;
-    }
+    margin: 0 auto;
+}
 .handcraft_picture_toy{
     background-image: url("../Images/shop-item-desk2.jpg");
     background-repeat: no-repeat;
@@ -659,6 +672,7 @@ sup {
     width: 300px;
     height: 204px;
     background-color:#eff6f1;
+    margin: 0 auto;
 }
 .handcraft_picture_mirror{
     background-image: url("../Images/shop-item-desk3.jpg");
@@ -672,9 +686,10 @@ sup {
     width: 300px;
     height: 204px;
     background-color:#eff6f1;
+    margin: 0 auto;
 }
 .handcraft-description{
-    width: 347px;
+    width: 330px;
     height: 267px;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
@@ -682,6 +697,8 @@ sup {
     align-self: flex-end;
     padding-left: 15px;
     justify-content:space-between;
+    margin-left: 5%;
+
 }
 .handcraft-type{
     font-size: 20px;
@@ -758,7 +775,8 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    margin-top: 2%;
+    max-width: 1200px;
+    margin: auto;
 }
 .footer-socials{
     padding-top: 30px;
@@ -817,6 +835,15 @@ footer {
     padding-top: 50px;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+    font-weight: 700;
+    margin: auto;
+}
+.hover_copyright{
+    color: #999999;
+    margin: auto;
 }
 .popup_hidden{
     position:fixed;
@@ -1250,33 +1277,38 @@ footer {
     }
     .handcraft_holder{
         flex-wrap: wrap;
-        width: 100%;
+
+        margin: 0 auto;
     }
     .handcraft-set{
-        max-width: 477px;
+        max-width: 320px;
         margin-bottom: 5%;
+        justify-content: center;
+        margin: 10 auto;
     }
     .handcraft_picture_pillow{
         background-image: url("../Images/shop-item-mobile1.jpg");
-        width: 298px;
+        width: 280px;
         height: 230px;
         background-size: cover;
     }
     .handcraft_picture_toy{
         background-image: url("../Images/shop-item-mobile2.jpg");
-        width: 298px;
+        width: 280px;
         height: 230px;
         background-size: cover;
     }
     .handcraft_picture_mirror{
         background-image: url("../Images/shop-item-mobile3.jpg");
-        width: 298px;
+        width: 280px;
         height: 230px;
         background-size: cover;
     }
     .handcraft-description{
-        max-width: 332px;
+        max-width: 290px;
         width:100%;
+        margin: auto;
+
     }
     .handcraft-type{
         font-size: 17px;

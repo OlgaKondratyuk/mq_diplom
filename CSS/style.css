@@ -35,7 +35,6 @@ img {
     display: flex;
     position: relative;
     width:100%;
-    max-width:1660px ;
     justify-content: center;
 }
 .menu__button:after, .trend-label:after, .posts-header:after, .form-hint:after, .tags-header:after, .categories-header:after, .handcraft-label:after{
@@ -54,7 +53,6 @@ body{
     background-size: cover;
     background-color: #000000;
     position: relative;
-    height: 450px;
     width: 100%;
     }
 .welcome::before {
@@ -68,23 +66,26 @@ body{
     opacity: 0.6;
     width: 100%;
 }
+.headline{
+    display: flex;
+    padding-top: 1%;
+    width: 80%;
+    justify-content: space-between;
+}
 .header-logo {
-    background-image: url("../SVG/noemi-logo.svg");
-    background-repeat: no-repeat;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: center center;
     background-color: transparent;
     width: 100%;
     background-size: cover;
-    max-width:179px;
-    max-height: 41px;
-    margin-top: 1%;
+    width:179px;
+    height: 41px;
    }
 .title-name-container{
     display:flex;
     justify-content: space-around;
-    margin-top:3%;
+    padding-bottom: 3%;
 }
 .title-name {
     display: flex;
@@ -103,12 +104,13 @@ body{
 }
 .menu{
     display:flex;
+   justify-content: flex-end;
 }
 .menu-list {
     display: flex;
     list-style-type: none;
-    margin-top: 5%;
-    margin-left: 40%;
+   justify-content: flex-end;
+
 }
 .menu-link {
     margin-right: 50px;
@@ -1029,7 +1031,7 @@ footer {
         line-height: 55px;
     }
     .title-name-container{
-        margin-top:10%;
+        margin-top:5%;
     }
     .trend-label {
         font-size: 18px;
@@ -1116,23 +1118,29 @@ footer {
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
         width:100%;
+
     }
     .container{
         display: flex;
         flex-direction: column;
         position: relative;
     }
+    .headline{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3%;
+        justify-content: center;
+        width: 100%;
+    }
     .header-logo {
         width: 269px;
         height: 61px;
-        justify-content: center;
+        padding-top: 40%;
+        padding-bottom: 5%;
+        margin: auto;
         display: flex;
-        margin-left: 23%;
-        margin-top: 40%;
-        position: absolute;
         }
     .title-name-container{
-        position: relative;
         justify-content: center;
     }
     .title-name {
@@ -1140,14 +1148,14 @@ footer {
         line-height:30px;
         width: 269px;
         height: 61px;
-        margin-top: 150px;
+        padding-bottom: 80%;
     }
     .menu-list {
         display: none;
     }
     .js-menu{
         height: 20%;
-        margin-right: 5%;
+        padding-right: 5%;
     }
     .js-menu_active .menu__list {
         width: 100%;
@@ -1190,8 +1198,7 @@ footer {
         color: #00aeff
     }
     .menu__button{
-     margin-left: 90%;
-     margin-top: 20px;
+
     }
     .trend_group {
        margin-bottom: 5%;

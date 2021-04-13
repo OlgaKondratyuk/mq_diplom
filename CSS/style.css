@@ -82,11 +82,7 @@ body{
     width:179px;
     height: 41px;
    }
-.title-name-container{
-    display:flex;
-    justify-content: space-around;
-    padding-bottom: 3%;
-}
+
 .title-name {
     display: flex;
     position: relative;
@@ -98,6 +94,9 @@ body{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-left: 30%;
 }
 .header {
     display: flex;
@@ -111,6 +110,7 @@ body{
     list-style-type: none;
    justify-content: flex-end;
     padding:0px;
+    margin: 0px;
 }
 .menu-link {
     margin-right: 50px;
@@ -1026,12 +1026,13 @@ footer {
         display: none;
     }
     .title-name{
-        width: 600px;
+        max-width: 600px;
         font-size: 40px;
         line-height: 55px;
-    }
-    .title-name-container{
-        margin-top:5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 35%;
+
     }
     .trend-label {
         font-size: 18px;
@@ -1118,7 +1119,6 @@ footer {
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
         width:100%;
-
     }
     .container{
         display: flex;
@@ -1140,15 +1140,16 @@ footer {
         margin: auto;
         display: flex;
         }
-    .title-name-container{
-        justify-content: center;
-    }
+
     .title-name {
+        display: flex;
         font-size: 20px;
         line-height:30px;
-        width: 269px;
+        width: 200px;
         height: 61px;
         padding-bottom: 80%;
+        justify-content: center;
+        padding-left: 20%;
     }
     .menu-list {
         display: none;

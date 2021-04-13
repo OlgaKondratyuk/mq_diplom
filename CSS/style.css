@@ -36,7 +36,7 @@ img {
     position: relative;
     width:100%;
     justify-content: center;
-}
+    }
 .menu__button:after, .trend-label:after, .posts-header:after, .form-hint:after, .tags-header:after, .categories-header:after, .handcraft-label:after{
     content: "";
     display: table;
@@ -110,7 +110,7 @@ body{
     display: flex;
     list-style-type: none;
    justify-content: flex-end;
-
+    padding:0px;
 }
 .menu-link {
     margin-right: 50px;

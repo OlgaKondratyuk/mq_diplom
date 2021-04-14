@@ -71,6 +71,7 @@ body{
     padding-top: 1%;
     width: 80%;
     justify-content: space-between;
+    max-width: 1200px;
 }
 .header-logo {
     -webkit-appearance: none;
@@ -109,8 +110,8 @@ body{
     display: flex;
     list-style-type: none;
    justify-content: flex-end;
-    padding:0px;
-    margin: 0px;
+    padding:0;
+    margin: 0;
 }
 .menu-link {
     margin-right: 50px;
@@ -1292,7 +1293,6 @@ footer {
         max-width: 320px;
         margin-bottom: 5%;
         justify-content: center;
-        margin: 10 auto;
     }
     .handcraft_picture_pillow{
         background-image: url("../Images/shop-item-mobile1.jpg");

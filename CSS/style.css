@@ -95,9 +95,7 @@ body{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 5%;
-    padding-bottom: 7%;
-    padding-left: 30%;
+    margin: auto;
 }
 .header {
     display: flex;
@@ -1035,10 +1033,6 @@ footer {
         max-width: 600px;
         font-size: 40px;
         line-height: 55px;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 35%;
-
     }
     .trend-label {
         font-size: 18px;
@@ -1134,7 +1128,7 @@ footer {
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
         width:100%;
-        max-height: 640px;
+        height: 640px;
     }
     .container{
         display: flex;

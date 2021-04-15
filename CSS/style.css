@@ -315,21 +315,26 @@ body{
 .news {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 800px;
+    width: 100%;
 }
 .recent-news {
     margin-bottom: 5%;
     display: flex;
-    width: 796px;
-    justify-content: space-between;
+    max-width: 784px;
+
 }
 .news-preview {
-    width: 363px;
+   max-width: 363px;
+    width: 100%;
+    padding-right: 10px;
+
 }
 .news-info {
     display:flex;
     flex-direction:column;
-    width: 363px;
+    max-width: 363px;
+    padding-left: 5px;
 }
 .news-category {
     font-size: 14px;
@@ -367,8 +372,9 @@ body{
     margin-left: 20px;
 }
 .news-description {
-    width: 367px;
-    height: 62px;
+    max-width: 367px;
+    max-height: 62px;
+    width: 100%;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
@@ -701,7 +707,6 @@ body{
     padding-left: 15px;
     justify-content:space-between;
     margin-left: 5%;
-
 }
 .handcraft-type{
     font-size: 20px;
@@ -1058,18 +1063,27 @@ footer {
         font-size: 17px;
         line-height: 22px;
     }
+    .body{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content:center;
+        margin: auto;
+        padding-left: 3%;
+        padding-right: 5%;
+    }
     .recent-news {
         flex-wrap: wrap;
         width: 100%;
-        flex-direction: column;
     }
     .news-name {
         font-size: 17px;
         line-height: 22px;
     }
     .news-description {
-        width: 392px;
-        height: 76px;
+        max-width: 392px;
+        max-height: 76px;
+        padding-bottom: 5%;
     }
     .handcraft_group{
         margin-top: 5%;
@@ -1120,6 +1134,7 @@ footer {
     .welcome {
         background-image: url(../Images/banner-mobile.jpg);
         width:100%;
+        max-height: 640px;
     }
     .container{
         display: flex;
@@ -1146,11 +1161,12 @@ footer {
         display: flex;
         font-size: 20px;
         line-height:30px;
-        width: 200px;
-        height: 61px;
-        padding-bottom: 80%;
+        width: 277px;
+        height: 91px;
         justify-content: center;
-        padding-left: 20%;
+        padding:0;
+        margin: auto;
+
     }
     .menu-list {
         display: none;
@@ -1203,14 +1219,14 @@ footer {
 
     }
     .trend_group {
-       margin-bottom: 5%;
-    }
+          }
     .trend-label {
         font-size: 16px;
         line-height: 29px;
     }
     .trend_holder {
         flex-wrap: wrap;
+        width: 100%;
     }
     .trend_set {
        margin-bottom: 1%;
@@ -1239,6 +1255,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        max-width: 1200px;
         width: 100%;
         }
     .recent-news {
@@ -1279,24 +1296,25 @@ footer {
         margin-bottom: 5%;
     }
     .handcraft_group{
-        margin: 0 auto;
+        margin: auto;
     }
     .handcraft-label{
         font-size: 16px;
     }
     .handcraft_holder{
         flex-wrap: wrap;
-
-        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
     }
     .handcraft-set{
-        max-width: 320px;
+        max-width: 332px;
         margin-bottom: 5%;
         justify-content: center;
+        width:100%;
     }
     .handcraft_picture_pillow{
         background-image: url("../Images/shop-item-mobile1.jpg");
-        width: 280px;
+        width: 286px;
         height: 230px;
         background-size: cover;
     }

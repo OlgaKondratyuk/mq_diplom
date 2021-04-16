@@ -1019,8 +1019,8 @@ footer {
     }
     .header-logo {
         height: 36px;
-        margin-top: 5%;
-        margin-left:5%;
+        width: 100%;
+        margin: auto;
     }
     .js-menu{
         height: 20%;
@@ -1334,7 +1334,6 @@ footer {
         max-width: 290px;
         width:100%;
         margin: auto;
-
     }
     .handcraft-type{
         font-size: 17px;
@@ -1404,8 +1403,6 @@ footer {
     }
     .header-logo {
         height: 36px;
-        margin-top: 43px;
-        margin-left:35px;
     }
     .title-name {
         display: flex;
